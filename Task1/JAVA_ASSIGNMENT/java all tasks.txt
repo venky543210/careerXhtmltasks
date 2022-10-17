@@ -1,0 +1,177 @@
+import java.util.Scanner;
+
+public class tasks{
+public static void main(String[] args)
+{
+          //print HELLO WORLD!  In java 
+          String var1 = "Hello world";
+          System.out.println(var1);
+
+          //Declare three variable and assign the three value to the variable in java?
+
+          float var2 = 5.5f;
+          System.out.println("float :"+var2);
+  
+          char var3 = 'A';
+          System.out.println("char :"+var3);
+  
+          String var4 = "hi good morning";
+          System.out.println("string"+var4);
+
+
+          //filling the blanks task #3
+           
+         int myNum = 9;
+         float myFloatNum = 8.99f;
+         char myLetter = 'A';
+         Boolean myBool = false;
+         String myText = "Hello World";
+
+        //Write a Java program to print an int, a double and a char in java?
+         int var5 = 10;
+         char var6 = 'A';
+         double var7 = 4.98987d;
+        
+//Write a program to print the sum of the numbers 2, 4 and 5.
+
+         int var8 = 2;
+         int var9 = 4;
+         int var10 = 5;
+         int var11 = var8 + var9 + var10;
+         System.out.println("sum of two numbers :"+ var11);
+
+  //Write a program to print the difference and product of the numbers 45 and 32.
+
+         int var12= 45;
+         int var13 = 32;
+         int var14 = var12-var13;
+         int var15 = var12*var13;
+         System.out.println("differnce of two numbers :"+var14);
+         System.out.println("product of two numbers :"+var15);
+
+//Write a program to print the area of a rectangle of sides 2 and 3 units respectively.
+
+
+         int length = 2;
+         int breadth = 3;
+         int area = length * breadth;
+         System.out.println("Area of the Rectangle is :"+area);
+
+//Write a program to print the product of the numbers 8.2 and 6 in java ?
+
+
+         float var16 = 8.2f;
+         int   var17 = 6;
+         float var18 = var16*var17;
+         System.out.println(" the product of the numbers 8.2 and 6 is :"+var18);
+
+//Write a program to assign a value of 100.235 to a double variable and then convert it to int.
+         double var19 = 100.235d;
+         int var20 = (int)var19;
+         System.out.println("conversion of double to int :"+var20);
+
+//Write a program to add an integer variable having value 5 and a double variable having value 6.2
+
+         int var21 = 5;
+         double var22 = 6.2;
+         double var23 = var21 + var22;
+         System.out.println("addition of an integer variable having value 5 and a double variable having value 6.2 :"+var23);
+
+
+
+//Write a program to check if the two numbers 23 and 45 are equal.
+
+         int var24 = 23;
+         int var25 = 45;
+         System.out.println(var24 == var25);
+
+/*Write a program to add 8 to the number 2345 and then divide it by 3.
+ Now, the modulus of the quotient is taken with 5 and then multiply the resultant value by 5.
+  Display the final result*/
+
+         int var26 = 8;
+         int var27 = 2345;
+         int var28 = var26+var27;
+         int var29 = 3;
+         int var30 = var28/var29;
+         int var31 = 5;
+         int var32 = var30%var31;
+         int var33 = var32*var31;
+         System.out.println("mathematical logic task 12 output is :"+var33);
+
+//Length and breadth of a rectangle are 5 and 7 respectively. Write a program to calculate the area and perimeter of the rectangle.
+
+//AREA
+         int a,b,c,d,ara,pr;
+          a = c = 5;
+          b = d = 7;
+          ara = a*b;
+          System.out.println("Area of a rectangle :" +ara);
+
+          //PERIMETER
+
+         pr = 2*(a+b);
+         System.out.println("perimeter of a rectangle:"+pr);
+
+
+//ake values of length and breadth of a rectangle from user and check if it is square or not.
+
+
+         if (a == b)
+
+          {
+            System.out.println("this is a square");
+          }
+          else{
+            System.out.println("this is a rectangle");
+
+        
+          }
+
+
+
+          /*A school has following rules for grading system:
+a. Below 25 - F
+b. 25 to 45 - E
+c. 45 to 50 - D
+d. 50 to 60 - C
+e. 60 to 80 - B
+f. Above 80 - A
+Ask user to enter marks and print the corresponding grade.*/
+
+float totalmarks,marksobtained;
+System.out.println("enter the total marks & Marks Obtained");
+Scanner prc = new Scanner(System.in);
+totalmarks = prc.nextFloat();
+marksobtained = prc.nextFloat();
+float perc = (marksobtained/totalmarks) * 100;
+System.out.println("percentage is " + perc);
+
+if(perc>80)
+{
+    System.out.println("grade is A");
+}
+else if(perc>60)
+{
+    System.out.println("grade is B");  
+}
+else if(perc>50)
+{
+    System.out.println("grade is C");  
+}
+else if(perc>45)
+{
+    System.out.println("grade is d");
+}
+
+    else if(perc>25)
+{
+    System.out.println("grade is e");
+}
+else {
+    System.out.println("grade is f");
+}
+
+         
+}
+}

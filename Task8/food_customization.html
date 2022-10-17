@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customize your food </title>
+        <style>
+        body{background-color:darkgreen;color: aliceblue;}
+        h2{color: aliceblue;font-family: cursive;font-style: italic;}
+        h1{color:gold;font-style: italic;text-align: center;font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+        </style>
+     </head>
+    <body> 
+        <h1>ABC Biryani's</h1>
+        <hr><br><br>
+        <h2>Customize your Biryani here... </h2><br>
+        <section class="Biryani type">
+        <label>Type Of Biryani</label>
+        <select required>
+            <option>Chicken mini Dum</option>
+            <option>Chicken Dum (Large)</option>
+            <option>Chicken mini Fry Piece</option>
+            <option>Chicken FryPiece Large</option>
+            <option>Mutton mini</option>
+            <option>Prawn mini</option>
+            <option>Fish mini</option>
+            <option>Mutton Large</option>
+            <option>Prawn Large</option>
+            <option>Fish Large</option>
+
+        </select>
+       
+        </section>
+
+        <hr>
+        <section class="rice">
+            <label>Type of Rice - </label>
+            Normal Rice<input type = "radio" name =rice id =typeofrice > 
+            Basmathi Rice<input type = "radio" name =rice id =typeofrice>
+        </section>
+        
+        <hr>
+        <section class = "masala">
+            <label>Level of Masala(0-100) - </label>
+           <input type = "range" name =level id = masalalevel value="50" min = "0" max="100"> 
+           
+        </section>
+        <hr>
+         <section class="cultrey">
+            <label>To attach Cultrey : </label>
+            Yes<input type = "radio" name =cultrey id =typeofrice > 
+            No<input type = "radio" name =cultrey id =typeofrice>
+         </section>
+        <hr>
+        <section class="typeofchicken">
+            <label>Type of Chicken pieces to be included : </label>
+            Leg<input type="checkbox" name = "leg">
+           Chest <input type="checkbox" name = "chest">
+           wings <input type="checkbox" name = "leg">
+           lollipops<input type="checkbox" name = "lollipop">
+
+        </section>
+        <hr>
+        <section class = "spice">
+            <label>Spice level : </label>
+            <input type = "range" name = "spice" value = "50" min = "0"  max = "100">
+        </section>
+
+        <hr>
+        <section class = "instructions">
+            <label>Add other Instructions(optional) : </label>
+            <textarea rows = "4" cols = "20"></textarea>
+
+        </section>
+        <hr>
+        <section class = "delivery">
+            <label>Mode of Delivery : </label>
+            Outlet<input type = "radio" name = "delivery" id = "Outlet" >
+            Home delivery<input type = "radio" name = "delivery" id = "Home delivery">
+        </section>
+        <hr>
+        <section class = "area">
+            <label>Nearest Outlet to you - </label>
+            <select required>
+                <option>Kukatpally</option>
+                <option>KPHB</option>
+                <option>Miyapur</option>
+                <option>Moosapet</option>
+                <option>Erragadda</option>
+                <option>SR Nagar</option>
+                <option>Ameerpet</option>
+                <option>Panjagutta</option>
+                <option>Lakdikapool</option>
+                <option>Madhapur</option>
+            </select>
+        </section>
+        <hr>
+        <section class = "address">
+            <label>Add Delivery Address : </label>
+            <textarea rows = "4" cols = "20" required></textarea>
+
+        </section>
+        <hr>
+        <section class = "num">
+            <label>Add Ph.no.</label>
+            <input type="text" name = "num" required maxlength="10">
+        </section>
+        <br><br>
+      <center><button type="button" name ="Order Now" value="OrderNow">Order Now</button></center>
+    </body>
+</html>

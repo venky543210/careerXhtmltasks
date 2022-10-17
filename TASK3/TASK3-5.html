@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My own Code</title>
+           <script>
+             let no;
+            function getvalue()
+               {
+                no = Number(document.getElementById("num").value);
+                if(no % 2  == 0) 
+                    {
+                      document.getElementById("res").value = "This is even  number";
+                    }
+                else
+                   {
+                     document.getElementById("res").value = "This is odd  number";
+                   }
+            }
+      
+           </script>
+  </head>
+        <body>
+               <h1>FINDING EVEN OR ODD </h1>
+                 Enter the Number<input type = "text" name = "Enter the Number" id = "num">
+
+                <button onclick="getvalue()">Find</button><br><br>
+                Result <input type = "text" name = result id = "res">
+
+      </body>
+</html>

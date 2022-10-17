@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+        vote eligibility
+      </title>
+      <script>
+        function validate(age){
+            if (document.getElementById("age").value >= 18){
+                alert("Eligible");
+                
+        }
+        else{
+           alert("Not Eligible");
+        }
+    }
+    </script>
+    </head>
+    <body bgcolor = "grey">
+        <h1 align = "center">Vote Eligibility Validation</h1>
+        First Name : <input type = "text" name = "First Name" ><br><br>
+        Secong Name : <input type = "text" name = "Second Name" ><br><br>
+        Age : <input type = "text" id = "age"><br><br>
+        <button type = "button" onclick = validate("age") >validate</button><br><br>
+       </body>
+       </html>
